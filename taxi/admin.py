@@ -19,7 +19,7 @@ class DriverAdmin(UserAdmin):
 class CarAdmin(admin.ModelAdmin):
     list_display = ['manufacturer', 'model', ]
     search_fields = ['model', ]
-    list_filter = ['model', ]
+    list_filter = ['manufacturer', ]
 
 
 admin.site.register(Manufacturer)

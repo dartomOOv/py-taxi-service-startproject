@@ -6,7 +6,7 @@ from taxi_service import settings
 
 class Manufacturer(models.Model):
     name = models.CharField(max_length=63, unique=True)
-    country = models.CharField(max_length=63, )
+    country = models.CharField(max_length=63)
 
     class Meta:
         verbose_name_plural = 'manufacturers'
